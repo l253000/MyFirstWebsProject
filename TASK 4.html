@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Victoria's Journal</title>
+    <style>
+        body {
+            background: #dde6e8;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 40px auto;
+            width: 900px;
+            background: #fff;
+            border-radius: 8px;
+            border: 8px solid #b6dee7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+        .header {
+            background: #b6dee7;
+            color: #299ea6;
+            text-align: right;
+            padding: 16px 24px;
+            border-radius: 8px 8px 0 0;
+        }
+        .header h1 {
+            font-family: 'Verdana', Geneva, sans-serif;
+            font-weight: 300;
+            margin: 0;
+            font-size: 2em;
+            color: #299ea6;
+        }
+        .subtitle {
+            color: #6ecfcc;
+            font-size: 1em;
+        }
+        .sidebar {
+            width: 220px;
+            vertical-align: top;
+        }
+        .friends-box {
+            background: #6ecfcc;
+            color: #299ea6;
+            padding: 16px 18px;
+            border-radius: 6px;
+            margin-top: 30px;
+            font-family: 'Verdana', Geneva, sans-serif;
+        }
+        .friends-box h3 {
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            margin: 0 0 8px 0;
+        }
+        .friends-box ul {
+            list-style-type: disc;
+            margin: 0 0 0 18px;
+            padding: 0;
+        }
+        .friends-box li {
+            margin-bottom: 7px;
+        }
+        .friends-box .highlight {
+            color: #399d3b;
+            font-weight: 700;
+        }
+        .journal-entry {
+            background: #f5ffff;
+            border: 2px solid #b6dee7;
+            border-radius: 5px;
+            margin: 21px 0 20px 0;
+            padding: 12px 18px;
+            min-height: 120px;
+            position: relative;
+            overflow: hidden; /* helps keep float inside */
+        }
+        .entry-date {
+            color: #2fc8c2;
+            font-weight: 700;
+            font-family: 'Verdana', Geneva, sans-serif;
+            font-size: 1.22em;
+            margin-bottom: 8px;
+            text-decoration: underline;
+        }
+        .entry-content {
+            color: red;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        .entry-img {
+            float: right;
+            max-width: 120px;
+            max-height: 83px;
+            margin-left: 18px;
+            margin-bottom: 9px;
+            border-radius: 4px;
+            border: 1px solid #b6dee7;
+            display: block;
+        }
+        /* Optional: Clear floats at end, if needed */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<table class="container">
+    <tr>
+        <td colspan="2" class="header">
+            <h1>Victoria's Journal</h1>
+            <span class="subtitle">So fresh and so clean</span>
+        </td>
+    </tr>
+    <tr>
+        <td class="sidebar" rowspan="3">
+            <section class="friends-box">
+                <h3>Friends</h3>
+                <ul>
+                    <li>JD Dullins</li>
+                    <li class="highlight">Big Will</li>
+                    <li>Canon the Unknown</li>
+                </ul>
+            </section>
+        </td>
+        <td>
+            <section class="journal-entry clearfix">
+                <h2 class="entry-date">04/09/08: Spatulas</h2>
+                <p class="entry-content">
+                    Yesterday, I went to the store and got some much needed spatulas! (What better way to say I love myself than to buy myself a spatula?)
+                </p>
+                <img src="donuts.jpg" alt="Spatula" class="entry-img">
+            </section>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <section class="journal-entry clearfix">
+                <h2 class="entry-date">04/08/08: Cookie Cupcakes</h2>
+                <p class="entry-content">
+                    My favorite cartoon character is cookie, and my favorite dessert is cupcakes. So Cookie Cupcakes are best of both the worlds. Did you know? Cookie character once said,<br>
+                    Sometimes me think what is love, and then me think love is what cookie is for. Me give up the last cookie for you. *I wonder if the same applies for the cupcakes? (If so, I don't think I can ever love ANYONE!)
+                </p>
+                <img src="spatula.jpg" class="entry-img">
+            </section>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
